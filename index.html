@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do App</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="main-container">
+        <div class="todo-title-container">
+            <h1>To-do App</h1>
+        </div>
+
+        <div class="todo-input-container">
+            <form id="form" class="form">
+                <input type="text" placeholder="Enter to-do....E.g Dance later" name="todo-input" id="todo-input">
+                <button type="submit" id="submit-button">Add To-do</button>
+            </form>
+        </div>
+
+        <div class="todo-items-container" id="todo-item-container">
+            <!-- <div class="todo-item" id="todo-item">
+                <div class="left-side">
+                    <i class="fa-regular fa-circle"></i>
+                    <i class="fa-regular fa-circle-dot"></i>
+                    <p>Dance</p>
+                </div>
+                <div class="right-side">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div> -->
+        </div>
+        
+    </div>
+
+    <form id="form">
+        <input type="text" placeholder="Enter City" id="city" name="city">
+        <button type="submit">Get weather data</button>
+    </form>
+
+    <div id="countrydiv">
+         </div>
+    <script src="./promise.js"></script>
+</body>
+</html>
