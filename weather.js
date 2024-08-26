@@ -2,6 +2,7 @@ let cityInput = document.getElementById("cityname")
 let form = document.getElementById("form")
 let APIKEY = `2de46d242e622d2f7379e93031b61613`
 let weatherViewContainer = document.getElementById("weather-view-container")
+let backgroundImage = getElementById("weather-image")
 
 form.addEventListener("submit", function(event){
     event.preventDefault()
@@ -20,6 +21,7 @@ function collectWeatherReport(city){
             console.log(data)
             printWeatherOnUI(data)
         }
+
     }
 
     weatherRequest.send()

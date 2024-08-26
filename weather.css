@@ -7,13 +7,16 @@
 
 .main-container{
     width: 100%;
-    height: auto;
+    height: 100vh;
     padding: 2rem 5rem;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
     row-gap: 4rem;
+    background-image: url("./images/normal.jpeg");
+    background-size: cover;
+    background-position: center top;
 }
 
 .heading{
@@ -24,6 +27,7 @@
 .heading h1{
     font-size: 4rem;
     font-weight: 600;
+    color: #fff;
 }
 
 .weather-container{
@@ -32,7 +36,7 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
+    /* align-items: center; */
     row-gap: 2rem;
 }
 
@@ -76,7 +80,7 @@ button{
     background-color: aqua;
 }
 
-.view{
+.weather-view-container{
     width: 100%;
     height: auto;
     display: flex;
@@ -94,6 +98,7 @@ button{
 .city-name-container h1{
     font-size: 4rem;
     font-weight: 600;
+    color: #fff;
 }
 
 .weather-result-container{
@@ -128,13 +133,13 @@ button{
 .temperature-container p{
     font-size: 2rem;
     font-weight: 400;
-    color: #7a7a7a;
+    color: #ededed;
 }
 
 .temperature-container h5{
     font-size: 2rem;
     font-weight: 600;
-    color: #000;
+    color: #fff;
 }
 
 .right-container{
@@ -154,9 +159,10 @@ button{
 
 .condition h3{
     font-size: 2rem;
+    color: #fff;
 }
 
-.humidity-container, .wind-container, .precipitation-container{
+.humidity-container{
     width: 100%;
     height: auto;
     display: flex;
@@ -166,12 +172,14 @@ button{
     column-gap: 0.2rem;
 }
 
-.humidity-container p, .wind-container p, .precipitation-container p{
+.humidity-container p{
     font-size: 1.5rem;
     font-weight: 400;
+    color: #fff;
 }
 
-.humidity-container h5, .wind-container h5, .precipitation-container h5{
+.humidity-container h5{
     font-size: 1.5rem;
     font-weight: 600;
+    color: #fff;
 }
