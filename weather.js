@@ -18,8 +18,24 @@ function collectWeatherReport(city){
     weatherRequest.onreadystatechange = function(){
         if(this.readyState === 4 && this.status === 200){
             let data = JSON.parse(this.responseText)
-            console.log(data)
             printWeatherOnUI(data)
+
+            //TODO: Change background image to respective image on weather conditions
+            if(data?.weather[0].main === "Clouds"){
+                backgroundImage.style.backgroundImage = "url('https://images.unsplash.com/photo-1522196416316-5d9f1e3dabf6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')"
+            }
+            else if(data?.weather[0].main === "Rain"){
+                backgroundImage.style.backgroundImage = "url('https://images.unsplash.com/photo-1522196416316-5d9f1e3dabf6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')"
+            }
+            else if(data?.weather[0].main === "Clear"){
+                backgroundImage.style.backgroundImage = "url('https://images.unsplash.com/photo-1522196416316-5d9f1e3dabf6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')"
+            }
+            else if(data?.weather[0].main === "Snow"){
+                backgroundImage.style.backgroundImage = "url('https://images.unsplash.com/photo-1522196416316-5d9f1e3dabf6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')"
+            }
+            else{
+                backgroundImage.style.backgroundImage = "url('https://images.unsplash.com/photo-1522196416316-5d9f1e3dabf6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')"
+            }
         }
 
     }
