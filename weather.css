@@ -87,7 +87,10 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 2rem;
+    row-gap: 6rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 4rem;
+    border-radius: 1rem;
 }
 
 .city-name-container{
